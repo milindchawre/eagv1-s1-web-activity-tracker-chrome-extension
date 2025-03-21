@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Activity Time Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Web Activity Time Tracker</h1>
+  </div>
+  
+  <div class="chart-container">
+    <canvas id="pieChart"></canvas>
+  </div>
+  
+  <div class="stats-container">
+    <div class="total-time">Total Time Today: <span id="totalTime">0m 0s</span></div>
+    <div class="website-stats">
+      <table id="websiteTable">
+        <thead>
+          <tr>
+            <th>Website</th>
+            <th>Time Spent</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody id="websiteList"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="chart.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
